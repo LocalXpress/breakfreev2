@@ -1,12 +1,17 @@
 <?php
 	include_once 'header.php';
-	foreach ($data as $i)
-	{
-		echo "<a href='ArticleView.php?id=".$i['articleId']."'>".$i['articleId']."</a>";
-		echo ' '.$i['articleTitle'];
-		echo '<br>Dated: '.$i['articleDate'];
-		echo ' By: '.$i['articleWriter'];
-		echo '<br>';
-	}
+
+	echo "LIST OF ALL THE BLOG POST WILL BE SHOWN HERE<BR>";
+
+	for($i=2 ;$i<sizeof($data);$i++)
+          {
+            if(is_dir($data[$i]))
+            {
+            	$path_parts = pathinfo($data[$i]);
+            	echo "<a href='views/BlogDisplay.php?path=".$data[$i]."/&&filename=".$path_parts['filename']."'>".$path_parts['filename']."</a>";
+            }
+          }
+
+
 	include_once 'footer.php';
 ?>
