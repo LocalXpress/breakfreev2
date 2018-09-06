@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../css/BlogDisplay.css">
     <script type="text/javascript" src="../js/BlogDisplay.js"></script>
     <!--CDN FOR THE SEMENTIC UI-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>  
 </head>
 <!--START OF THE MAIN CONTENT-->
 
@@ -38,6 +38,7 @@ HEADER OF THE PAGE
             }
         ?>
     </div>
+</body>
 
 <!--
 FOOTER OF THE PAGE    
@@ -45,7 +46,6 @@ FOOTER OF THE PAGE
     <?php
         require_once 'footer.php';
     ?>
-</body>
 
 
           

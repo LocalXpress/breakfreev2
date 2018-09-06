@@ -3,64 +3,27 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 8px;
       }
 
       body
       {
-        background-color: #f9fcfa;
+        background-color: #ffffff;
         margin-top:0%;
       }
 
-      #progres
-      {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
     /*CSS FOR THE COMPUTER DESKTOP*/
     @media only screen and (min-width: 750px){
       #MainContent img 
       {
         width: 80%;
       }
-
-
-      #progres
-      {
-        width: 80%;
-        padding-top: 1%;
-        padding-bottom: 0.5%;
-      }
     }
 
     /*CSS FOR THE MOBILE PHONE*/
-    @media only screen and (max-width: 749px){
-
-      #MainContent img 
-      {
-        width: 99%;
-      }
-
-
-      #progres
-      {
-        width: 99%;
-        padding-top: 2%;
-        padding-bottom: 2.5%;
-      }
-    }
-    .mainHeader
-        {
-            color: red !important;
-            font-size: 25px !important;
-            font-family: "Verdana", Geneva, sans-serif !important;
-        }
-    .extra
-        {
-            border-radius: none !important;
-        }
-    .caps
+    @media only screen and (max-width: 749px)
     {
-        text-transform: uppercase;
-    }  
+      #MainContent img 
+        {
+          width: 99%;
+        }
+    }
