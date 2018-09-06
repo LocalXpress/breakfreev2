@@ -1,3 +1,34 @@
+<style type="text/css">
+.imgheader
+    {
+        width:                100%;
+        transform-origin:     right bottom;
+        transform:            skewY(-4deg);
+        margin-bottom:        20%;
+    }
+.headerBack
+    {
+        background-color:     #0194a8;
+        height:               70%;
+    }
+.box
+    {
+        background-color:     #0194a8;
+        display:              block;
+        width:                100%;
+        height:               10%; 
+        transform-origin:     right bottom;
+        transform:            skewY(-2deg);  
+    } 
+ @media only screen and (max-width: 750px)
+    {
+    .headerBack
+        {
+            height:               30%;
+        }
+    }  
+</style>
+<div class="box"></div>
 <!--FOOTER SECTION-->
         <div class="ui inverted vertical footer segment" id="footer">
             <div class="ui center aligned container">
