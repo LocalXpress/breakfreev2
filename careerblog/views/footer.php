@@ -1,3 +1,4 @@
+<!--STYLE ATTRIBUTES-->
 <style type="text/css">
 .imgheader
     {
