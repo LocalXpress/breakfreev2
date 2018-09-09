@@ -1,5 +1,4 @@
 <?php
-	include_once 'header.php';
 
 	echo "LIST OF ALL THE BLOG POST WILL BE SHOWN HERE<BR>";
 
@@ -11,7 +10,4 @@
             	echo "<a href='views/BlogDisplay.php?path=".$data[$i]."/&&filename=".$path_parts['filename']."'>".$path_parts['filename']."</a>";
             }
           }
-
-
-	include_once 'footer.php';
 ?>
