@@ -5,15 +5,18 @@
         transform-origin:     right bottom;
         transform:            skewY(-4deg);
         margin-bottom:        20%;
+        z-index:              0;
     }
 .headerBack
     {
-        background-color:     #0194a8;
+        background-image:     linear-gradient(to bottom right, #0194a8, black);
         height:               70%;
+        margin-top:           5%;
     }
 .box
     {
-        background-color:     #0194a8;
+        
+        background-image:     linear-gradient(to bottom right, #0194a8, black);
         display:              block;
         width:                100%;
         height:               10%; 

@@ -3,13 +3,16 @@
 <style>
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -21,9 +24,9 @@
   color: black;
 }
 
-.active {
-  background-color: #4CAF50;
-  color: white;
+.active 
+{
+  background-color: #0194a8;
 }
 
 .topnav .icon {
@@ -39,16 +42,22 @@
 }
 
 @media screen and (max-width: 750px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive 
+  {
+    position: relative;
+    z-index: 999;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
   .topnav.responsive a {
+    position: relative;
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    z-index: 999;
   }
 }
 </style>

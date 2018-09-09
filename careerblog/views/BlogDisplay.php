@@ -22,7 +22,8 @@
 <?php
     require_once 'header.php';
 ?>
-<br><br>
+<br><br><br>
+<center><h2 style="text-transform: uppercase;"><?=$_GET['filename'];?></h2></center>
 <div class="headerBack">   
     <img class="imgheader" src="../img/header.png">
 </div>
