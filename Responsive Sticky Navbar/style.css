@@ -29,7 +29,8 @@
 {
   text-decoration: none;
 }
-.content {
+.content 
+{
       font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
       width: 70%;
       margin: 4em auto;
@@ -58,14 +59,14 @@ h1    {
       font-size: 17px;
       letter-spacing: 2px;
       cursor: pointer;
-}
+      }
 
 nav {
       position: fixed;
       width: 100%;
       line-height: 40px;
       z-index: 99;
-}
+    }
 
 nav ul {
       line-height: 30px;
