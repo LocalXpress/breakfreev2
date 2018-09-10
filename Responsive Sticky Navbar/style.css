@@ -1,24 +1,33 @@
-html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-}
+  html, body 
+  {
+      margin:         0;
+      padding:        0;
+      width:          100%;
+  }
 
-body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
-}
+  body 
+  {
+      font-family:    "Helvetica Neue",sans-serif;
+      font-weight:    lighter;
+  }
 
-header {
+  header 
+  {
       width: 100%;
       height: 50vh;
       background: url(hero.jpg) no-repeat 50% 50%;
       background-size: cover;
-}
-hr{ 
+  }
+  
+  hr
+  { 
     display: block;
     border-top: 3px solid #01a897;
+  }
 
+.content a
+{
+  text-decoration: none;
 }
 .content {
       font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
@@ -55,6 +64,7 @@ nav {
       position: fixed;
       width: 100%;
       line-height: 40px;
+      z-index: 99;
 }
 
 nav ul {
@@ -71,7 +81,7 @@ nav ul {
 }
 
 nav.black ul {
-      background-color: rgb(1, 168, 151,0.6);
+      background-color: rgb(1, 168, 151,0.9);
 }
 
 nav ul li {
@@ -86,14 +96,18 @@ nav ul li:hover {
 nav ul li a {
       text-decoration: none;
       color: #fff;
-      font-size: 15px;
+      font-size: 18px;
 }
 
+nav ul li a:hover
+{
+  text-decoration: none;
+}
 
 .menu-icon {
       line-height: 30px;
       width: 100%;
-      background-color: rgb(1, 168, 151,0.6);
+      background-color: rgb(1, 168, 151,0.9);
       text-align: right;
       box-sizing: border-box;
       padding: 15px 18px;
@@ -101,15 +115,7 @@ nav ul li a {
       color: #fff;
       display: none;
 }
-.abovefooter{
-      padding-top: 2%;
-      padding-bottom: 1%;
-      width: 100%;
-      height: 6vh;
-      background-color: #596864;
-      color: white;
-      text-align: center;
-}
+
 .footer {
     padding-top: 2%;
     width: 100%;
@@ -118,19 +124,17 @@ nav ul li a {
     color: white;
     text-align: center;
 }
-.belowfooter
+.footer a
 {
-    left: 0;
-    bottom: 0;
-    padding-top: 2%;
-    width: 100%;
-    height: 10vh;
-    background-color: #181919;
-    color: white;
-    text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
-@media(max-width: 786px) {
-
+.footerleft
+{
+  float: left;
+  width: 30%;
+}
+@media(max-width: 650px) {
       .logo {
             position: fixed;
             top: 0;
@@ -139,11 +143,11 @@ nav ul li a {
 
       nav ul {
             max-height: 0px;
-            background-color: rgb(1, 168, 151,0.6);
+            background-color: rgb(1, 168, 151,0.9);
       }
 
       nav.black ul {
-            background-color: rgb(1, 168, 151,0.6);
+            background-color: rgb(1, 168, 151,0.9);
       }
 
       .showing {
@@ -161,6 +165,11 @@ nav ul li a {
       }
       .content{
             width: 90%;
+            font-size: 10px;
       }
-
+      .footerleft
+      {
+        width: 90%;
+        margin-bottom: 4%;
+      }
 }
