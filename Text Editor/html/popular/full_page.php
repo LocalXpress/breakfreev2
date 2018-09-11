@@ -18,151 +18,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
   <style>
-      body 
-      {
-          text-align: center;
-      }
 
-      #editor 
+      #id
       {
           width: 100%;
           margin: auto;
           text-align: left;
+          height: 80%;
+          background-color: red;
       }
-    
-
-div {
-  border-radius: 5px;
-}
-
-#header {
-  height: 40px;
-  width: 100%;
-  background-color: #ffcccc;
-  z-index: 1;
-}
-
-#title {
-  margin-left: 3%;
-}
-
-#footer {
-  height: 50px;
-  width: 100%;
-  background-color: #ffcccc;
-  clear: both;
-  position: relative;
-}
-
-.left {
-  height: 1000px;
-  width: 45px;
-  background-color: #e0eeee;
-  float: left;
-  position: inherit;
-}
-
-.right {
-  height: 1000px;
-  width: 45px;
-  background-color: #e0eeee;
-  float: right;
-  position: inherit;
-}
-
-.stuff {
-  display: inline-block;
-  margin-top: 6px;
-  margin-left: 55px;
-  width: 75%;
-  height: 1000px;
-}
-
-p,
-li {
-  font-family: 'Cormorant Garamond';
-}
-
-.head {
-  font-size: 20px;
-}
-
-#name {
-  font-family: Sacramento;
-  float: right;
-  margin-top: 10px;
-  margin-right: 4%;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 430px) {
-  .left,
-  .right {
-    display: none;
-  }
-  .stuff {
-    width: 100%;
-    margin-left: 10px;
-  }
-}
+      input[type=text]
+      {
+        width: 100%;
+        margin-bottom: 1%;
+      }
   </style>
 </head>
 
 <body>
-  <form action="check.php" method="post">
-    <textarea name="data" id="content">
-      <div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-  <br><br>
-  <h1>Resume</h1>
-  <h2>Emily</h2>
-  <hr />
-  <br>
-  <p class="head">Interests</p>
-  <ul>
-    <li>Drawing</li>
-    <li>Photography</li>
-    <li>Design</li>
-    <li>Programming</li>
-    <li>Computer Science</li>
-  </ul>
-  <p class="head">Skills</p>
-  <ul>
-    <li>Web Design with HTML & CSS</li>
-  </ul>
-  <p class="head">Education</p>
-  <ul>
-    <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
-      <li>Wilton High School</li>
-    </a>
-    <!--Link-->
-    <a href="https://www.silvermineart.org/">
-      <li>Silvermine School of Arts</li>
-    </a>
-    <li>Codeacademy</li>
-  </ul>
-  <p class="head">Experience</p>
-  <ul>
-    <li>Student Technology Intern for Wilton School District</li>
-    <li>Babysitter</li>
-  </ul>
-  <p class="head">Extracurriculars</p>
-  <ul>
-    <li>Recycling Club</li>
-    <li>Gardening Club</li>
-    <li>Book Club</li>
-  </ul>
-</div>
-<div class="right"></div>
-<div id="footer">
-  <h2 id="name">Emily</h2></div>
-    </textarea>
-    <input type="submit" name="submit" value="SUBMIT">
+  <center><h2>WRITE YOUR ARTICLE HERE</h2></center>
+  <form action="Responsive Sticky Navbar/index.php" method="post">
+    <input type="text" name="title"         id="title"          placeholder="Title of the Article"        required/><br>
+    <input type="text" name="writer"        id="writer"         placeholder="Written by"                  required/><br>
+    <input type="text" name="fblink"        id="fblink"         placeholder="Paste your Facebook Link"    required/><br>
+    <input type="text" name="linkedinlink"  id="linkedinlink"   placeholder="Paste your Linkedin Link"    required /><br>
+    <input type="text" name="timerequired"  id="timerequired"   placeholder="Time Required to Read"       required /><br>
+    <p>WRITE YOUR ARTICLE BELOW</p>
+    <p><i>Use h3 tag for headers and p for paragraphs and a for anchor links</i></p>
+    <p><i>Give a horizontal line after header</i></p>
+    <textarea name="content" id="content" required></textarea><br>
+    <center>
+      <input type="submit" name="submit" value="SUBMIT">
+      <input type="reset"  name="reset"  value="RESET">
+    </center>
   </form>
   
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
