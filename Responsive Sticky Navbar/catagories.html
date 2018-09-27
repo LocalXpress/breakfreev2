@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Navbar</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="catagories.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -14,7 +14,7 @@
       <div class="wrapper">
             <header>
 
-                  <nav>
+                  <nav class="black">
 
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
@@ -38,30 +38,7 @@
             </header>
             
             <div class="content">
-                  <h1>This is a header </h1> 
-                  Share This Article:  
-                  <a href="fjskdjh"><i class="fa fa-share-alt" aria-hidden="true"></i></a>&nbsp<br>
-                  <i>by: Arkoprobho Das </i> 
-                  <a href="#"><i class="fa fa-facebook-square"></i></a>
-                  <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                  |<i class="fa fa-clock-o"></i>
-                  <i>2 min read</i><br>
-                  <div class="dataRender">
-                        <p>
-                              <h3>This is a header</h3><hr>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled <a href="#">it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</a>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                              <a href="">ncluding versions of Lorem Ipsum.</a><img src="bwcover.jpg"/> 
-                        </p>
-                        <p>   <h3>This is a header</h3><hr>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <p>   <h3>This is a header</h3><hr>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                  </div>
-                  <br>
-                  <br>
-                  <h3>Did you enjoy this article? Then the below might interest you.</h3> <hr>
+                  <h1>Learn & Grow with our Resources</h1><hr> 
                   <div class="grid-container">
                         <a href="google.com">
                               <div class="grid-item">
@@ -74,6 +51,20 @@
                                     <p class="datetime">Click to explore...</p>
                               </div>
                         </a>
+                        <a href="google.com">
+                              <div class="grid-item">
+                                    <img src="post.jpg"><hr>
+                                    <h4>What You Can Learn from Satya Nadella’s Rise to CEO</h4>
+                                    <p class="datetime">August 21 | 2 min read</p>
+                                    <p>
+                                          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    </p>
+                                    <p class="datetime">Click to explore...</p>
+                              </div>
+                        </a>
+                  </div>
+
+                  <div class="grid-container">
                         <a href="google.com">
                               <div class="grid-item">
                                     <img src="post.jpg"><hr>
@@ -141,28 +132,14 @@
                   Copyright © 2018 SimplifiedCV Pvt Ltd All Rights Reserved.<br>
             </div>      
       </div>
+</body>
+
+
       <script type="text/javascript">
-
-
       $(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
       });
-
-
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('black');
-            }
-
-            else {
-                  $('nav').removeClass('black');
-            }
-      });
-
-
       </script>
-
-</body>
 </html>
